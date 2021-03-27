@@ -38,63 +38,60 @@ class ViewController: UIViewController, View {
     //MARK: UI
     
     fileprivate let saveButtonItem = UIBarButtonItem().then {
-
-        let saveButton = UIButton()
-        saveButton.frame.size = .init(
+        let button = UIButton()
+        button.frame.size = .init(
             width: Metric.barButtonSize,
             height: Metric.barButtonSize)
-        saveButton.setBackgroundColor(
+        button.setBackgroundColor(
             Color.barButtonBackgroundColor,
             for: .normal)
-        saveButton.layer.cornerRadius = Metric.barButtonRadius
-        saveButton.clipsToBounds = true
-        saveButton.titleLabel?.font = Font.barButtonFont
-        saveButton.setTitle("SAVE", for: .normal)
-        
-        $0.customView = saveButton
+        button.layer.cornerRadius = Metric.barButtonRadius
+        button.clipsToBounds = true
+        button.titleLabel?.font = Font.barButtonFont
+        button.setTitle("SAVE", for: .normal)
+        $0.customView = button
     }
     fileprivate let loadButtonItem = UIBarButtonItem().then {
-        let saveButton = UIButton()
-        saveButton.frame.size = .init(
+        let button = UIButton()
+        button.frame.size = .init(
             width: Metric.barButtonSize,
             height: Metric.barButtonSize)
-        saveButton.setBackgroundColor(
+        button.setBackgroundColor(
             Color.barButtonBackgroundColor,
             for: .normal)
-        saveButton.layer.cornerRadius = Metric.barButtonRadius
-        saveButton.clipsToBounds = true
-        saveButton.titleLabel?.font = Font.barButtonFont
-        saveButton.setTitle("LOAD", for: .normal)
-        
-        $0.customView = saveButton
+        button.layer.cornerRadius = Metric.barButtonRadius
+        button.clipsToBounds = true
+        button.titleLabel?.font = Font.barButtonFont
+        button.setTitle("LOAD", for: .normal)
+        $0.customView = button
     }
     fileprivate let penButtonItem = UIBarButtonItem().then {
-        let saveButton = UIButton()
-        saveButton.frame.size = .init(
+        let button = UIButton()
+        button.frame.size = .init(
             width: Metric.barButtonSize,
             height: Metric.barButtonSize)
-        saveButton.setBackgroundColor(
+        button.setBackgroundColor(
             Color.barButtonBackgroundColor,
             for: .normal)
-        saveButton.layer.cornerRadius = Metric.barButtonRadius
-        saveButton.clipsToBounds = true
-        saveButton.titleLabel?.font = Font.barButtonFont
-        saveButton.setTitle("PEN", for: .normal)
-        $0.customView = saveButton
+        button.layer.cornerRadius = Metric.barButtonRadius
+        button.clipsToBounds = true
+        button.titleLabel?.font = Font.barButtonFont
+        button.setTitle("PEN", for: .normal)
+        $0.customView = button
     }
     fileprivate let eraseButtonItem = UIBarButtonItem().then {
-        let saveButton = UIButton()
-        saveButton.frame.size = .init(
+        let button = UIButton()
+        button.frame.size = .init(
             width: Metric.barButtonSize,
             height: Metric.barButtonSize)
-        saveButton.setBackgroundColor(
+        button.setBackgroundColor(
             Color.barButtonBackgroundColor,
             for: .normal)
-        saveButton.layer.cornerRadius = Metric.barButtonRadius
-        saveButton.clipsToBounds = true
-        saveButton.titleLabel?.font = Font.barButtonFont
-        saveButton.setTitle("ERASE", for: .normal)
-        $0.customView = saveButton
+        button.layer.cornerRadius = Metric.barButtonRadius
+        button.clipsToBounds = true
+        button.titleLabel?.font = Font.barButtonFont
+        button.setTitle("ERASE", for: .normal)
+        $0.customView = button
         
     }
     fileprivate let drawImageView = UIImageView()
