@@ -1,0 +1,6 @@
+framework module Pods_FreeWheelinTest {
+  umbrella header "Pods-FreeWheelinTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
