@@ -97,6 +97,7 @@ class ViewController: UIViewController, View {
         $0.customView = saveButton
         
     }
+    fileprivate let drawImageView = UIImageView()
     
     //MARK: Rx
     
@@ -116,6 +117,7 @@ class ViewController: UIViewController, View {
         fatalError("init(coder:) has not been implemented")
     }
     
+
     //MARK: View Life Cycles + Set up Constraints
     
     private(set) var isSetConstraints = false
@@ -141,7 +143,6 @@ class ViewController: UIViewController, View {
     //MARK: Binding
     
     func bind(reactor: ViewReactor) {
-        <#code#>
         (saveButtonItem.customView as! UIButton).rx.tap
             .map{ Reactor.Action.save }
             .bind(to: reactor.action)
