@@ -18,6 +18,23 @@ class ViewController: UIViewController, View {
     
     typealias Reactor = ViewReactor
     
+    //MARK: Constants
+    
+    struct Metric {
+        static let barButtonSize = 41.f
+        static let barButtonRadius = 11.f
+    }
+    
+    struct Color {
+        static let lineColor = UIColor.black
+        static let barButtonBackgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1)
+    }
+    
+    struct Font {
+        static let barButtonFont = UIFont.systemFont(ofSize: 11)
+    }
+    
+    
     
     //MARK: Rx
     
