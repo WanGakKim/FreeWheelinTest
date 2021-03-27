@@ -35,6 +35,68 @@ class ViewController: UIViewController, View {
     }
     
     
+    //MARK: UI
+    
+    fileprivate let saveButtonItem = UIBarButtonItem().then {
+
+        let saveButton = UIButton()
+        saveButton.frame.size = .init(
+            width: Metric.barButtonSize,
+            height: Metric.barButtonSize)
+        saveButton.setBackgroundColor(
+            Color.barButtonBackgroundColor,
+            for: .normal)
+        saveButton.layer.cornerRadius = Metric.barButtonRadius
+        saveButton.clipsToBounds = true
+        saveButton.titleLabel?.font = Font.barButtonFont
+        saveButton.setTitle("SAVE", for: .normal)
+        
+        $0.customView = saveButton
+    }
+    fileprivate let loadButtonItem = UIBarButtonItem().then {
+        let saveButton = UIButton()
+        saveButton.frame.size = .init(
+            width: Metric.barButtonSize,
+            height: Metric.barButtonSize)
+        saveButton.setBackgroundColor(
+            Color.barButtonBackgroundColor,
+            for: .normal)
+        saveButton.layer.cornerRadius = Metric.barButtonRadius
+        saveButton.clipsToBounds = true
+        saveButton.titleLabel?.font = Font.barButtonFont
+        saveButton.setTitle("LOAD", for: .normal)
+        
+        $0.customView = saveButton
+    }
+    fileprivate let penButtonItem = UIBarButtonItem().then {
+        let saveButton = UIButton()
+        saveButton.frame.size = .init(
+            width: Metric.barButtonSize,
+            height: Metric.barButtonSize)
+        saveButton.setBackgroundColor(
+            Color.barButtonBackgroundColor,
+            for: .normal)
+        saveButton.layer.cornerRadius = Metric.barButtonRadius
+        saveButton.clipsToBounds = true
+        saveButton.titleLabel?.font = Font.barButtonFont
+        saveButton.setTitle("PEN", for: .normal)
+        $0.customView = saveButton
+    }
+    fileprivate let eraseButtonItem = UIBarButtonItem().then {
+        let saveButton = UIButton()
+        saveButton.frame.size = .init(
+            width: Metric.barButtonSize,
+            height: Metric.barButtonSize)
+        saveButton.setBackgroundColor(
+            Color.barButtonBackgroundColor,
+            for: .normal)
+        saveButton.layer.cornerRadius = Metric.barButtonRadius
+        saveButton.clipsToBounds = true
+        saveButton.titleLabel?.font = Font.barButtonFont
+        saveButton.setTitle("ERASE", for: .normal)
+        $0.customView = saveButton
+        
+    }
     
     //MARK: Rx
     
@@ -45,7 +107,8 @@ class ViewController: UIViewController, View {
     
     init(reactor: ViewReactor) {
         super.init(nibName: nil, bundle: nil)
-        self.navigationItem.leftBarButtonItems =  [saveButtonItem,loadButtonItem]
+        self.navigationItem.leftBarButtonItems = [ saveButtonItem, loadButtonItem ]
+        self.navigationItem.rightBarButtonItems = [ eraseButtonItem, penButtonItem ]
         self.reactor = reactor
     }
     
@@ -59,8 +122,10 @@ class ViewController: UIViewController, View {
     
     override func viewDidLoad() {
         self.view.setNeedsUpdateConstraints()
-    }
+        super.viewDidLoad()
 
+    }
+    
     override func updateViewConstraints() {
         if self.isSetConstraints == false {
             setConstraints()
@@ -77,6 +142,24 @@ class ViewController: UIViewController, View {
     
     func bind(reactor: ViewReactor) {
         <#code#>
+        (saveButtonItem.customView as! UIButton).rx.tap
+            .map{ Reactor.Action.save }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        (loadButtonItem.customView as! UIButton).rx.tap
+            .map{ Reactor.Action.save }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        (penButtonItem.customView as! UIButton).rx.tap
+            .map{ Reactor.Action.save }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        (eraseButtonItem.customView as! UIButton).rx.tap
+            .map{ Reactor.Action.save }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        
     }
     
 }
