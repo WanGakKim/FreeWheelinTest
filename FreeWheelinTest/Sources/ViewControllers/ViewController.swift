@@ -21,11 +21,26 @@ class ViewController: UIViewController {
         self.init()
     }
     
+    
+    //MARK: View Life Cycles + Set up Constraints
+    
+    private(set) var isSetConstraints = false
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.setNeedsUpdateConstraints()
     }
 
-
+    override func updateViewConstraints() {
+        if self.isSetConstraints == false {
+            setConstraints()
+            isSetConstraints = true
+        }
+        super.updateViewConstraints()
+    }
+    
+    func setConstraints(){
+        
+    }
+    
 }
 
