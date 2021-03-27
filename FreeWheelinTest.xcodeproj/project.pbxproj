@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2EDF2DB6260EF51D0090E8E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DB5260EF51D0090E8E4 /* AppDelegate.swift */; };
 		2EDF2DB8260EF51D0090E8E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DB7260EF51D0090E8E4 /* SceneDelegate.swift */; };
 		2EDF2DBA260EF51D0090E8E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DB9260EF51D0090E8E4 /* ViewController.swift */; };
-		2EDF2DBD260EF51D0090E8E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDF2DBB260EF51D0090E8E4 /* Main.storyboard */; };
 		2EDF2DC0260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DBE260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodeld */; };
 		2EDF2DC2260EF51F0090E8E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDF2DC1260EF51F0090E8E4 /* Assets.xcassets */; };
 		2EDF2DC5260EF51F0090E8E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDF2DC3260EF51F0090E8E4 /* LaunchScreen.storyboard */; };
@@ -22,7 +21,6 @@
 		2EDF2DB5260EF51D0090E8E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDF2DB7260EF51D0090E8E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2EDF2DB9260EF51D0090E8E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2EDF2DBC260EF51D0090E8E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EDF2DBF260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FreeWheelinTest.xcdatamodel; sourceTree = "<group>"; };
 		2EDF2DC1260EF51F0090E8E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDF2DC4260EF51F0090E8E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 				2EDF2DD0260EF5840090E8E4 /* Sources */,
 				2EDF2DCF260EF5660090E8E4 /* Support */,
 				2EDF2DCD260EF54A0090E8E4 /* Resources */,
-				2EDF2DBB260EF51D0090E8E4 /* Main.storyboard */,
 			);
 			path = FreeWheelinTest;
 			sourceTree = "<group>";
@@ -123,7 +120,6 @@
 				A122323AEDE468C4C62EC1F6 /* Pods-FreeWheelinTest.debug.xcconfig */,
 				44FD608F7AB490AEB7C33809 /* Pods-FreeWheelinTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -188,7 +184,6 @@
 			files = (
 				2EDF2DC5260EF51F0090E8E4 /* LaunchScreen.storyboard in Resources */,
 				2EDF2DC2260EF51F0090E8E4 /* Assets.xcassets in Resources */,
-				2EDF2DBD260EF51D0090E8E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,14 +246,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2EDF2DBB260EF51D0090E8E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2EDF2DBC260EF51D0090E8E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2EDF2DC3260EF51F0090E8E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
