@@ -26,12 +26,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.backgroundColor = .white
             window.makeKeyAndVisible()
 
-//            let serviceProvider = ServiceProvider()
-//            let reactor = HomeListViewReactor(provider: serviceProvider)
-//            let viewController = HomeListViewController(reactor: reactor)
-//            let navigationController = UINavigationController(rootViewController: viewController)
-//            window.rootViewController = navigationController
-
             self.window = window
         }
     }
