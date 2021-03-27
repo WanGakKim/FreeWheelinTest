@@ -11,6 +11,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: initializing
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required convenience init?(coder: NSCoder) {
+        self.init()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
