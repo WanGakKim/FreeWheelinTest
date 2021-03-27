@@ -10,23 +10,29 @@
 import UIKit
 
 import RxSwift
+import ReactorKit
 
-class ViewController: UIViewController {
-
-    // MARK: initializing
+class ViewController: UIViewController, View {
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
+    typealias Reactor = ViewReactor
     
-    required convenience init?(coder: NSCoder) {
-        self.init()
-    }
     
     //MARK: Rx
     
     var disposeBag = DisposeBag()
     
+    
+    // MARK: initializing
+    
+    init(reactor: ViewReactor) {
+        super.init(nibName: nil, bundle: nil)
+        self.navigationItem.leftBarButtonItems =  [saveButtonItem,loadButtonItem]
+        self.reactor = reactor
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     //MARK: View Life Cycles + Set up Constraints
     
@@ -46,6 +52,12 @@ class ViewController: UIViewController {
     
     func setConstraints(){
         
+    }
+    
+    //MARK: Binding
+    
+    func bind(reactor: ViewReactor) {
+        <#code#>
     }
     
 }
