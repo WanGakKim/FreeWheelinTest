@@ -14,6 +14,7 @@
 		2EDF2DC2260EF51F0090E8E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDF2DC1260EF51F0090E8E4 /* Assets.xcassets */; };
 		2EDF2DC5260EF51F0090E8E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDF2DC3260EF51F0090E8E4 /* LaunchScreen.storyboard */; };
 		2EDF2DE6260F2DE10090E8E4 /* ViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DE5260F2DE10090E8E4 /* ViewReactor.swift */; };
+		2EDF2DEC260F41440090E8E4 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DEB260F41440090E8E4 /* UIButton+Extensions.swift */; };
 		E2D8EFFBFBD8E324203F8560 /* Pods_FreeWheelinTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B608A46FADF0F82D66780A /* Pods_FreeWheelinTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		2EDF2DC4260EF51F0090E8E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EDF2DC6260EF51F0090E8E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EDF2DE5260F2DE10090E8E4 /* ViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactor.swift; sourceTree = "<group>"; };
+		2EDF2DEB260F41440090E8E4 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		44FD608F7AB490AEB7C33809 /* Pods-FreeWheelinTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeWheelinTest.release.xcconfig"; path = "Target Support Files/Pods-FreeWheelinTest/Pods-FreeWheelinTest.release.xcconfig"; sourceTree = "<group>"; };
 		A122323AEDE468C4C62EC1F6 /* Pods-FreeWheelinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeWheelinTest.debug.xcconfig"; path = "Target Support Files/Pods-FreeWheelinTest/Pods-FreeWheelinTest.debug.xcconfig"; sourceTree = "<group>"; };
 		D7B608A46FADF0F82D66780A /* Pods_FreeWheelinTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeWheelinTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 		2EDF2DD0260EF5840090E8E4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2EDF2DEA260F41350090E8E4 /* Utils */,
 				2EDF2DD1260EF5940090E8E4 /* ViewControllers */,
 				2EDF2DB5260EF51D0090E8E4 /* AppDelegate.swift */,
 				2EDF2DB7260EF51D0090E8E4 /* SceneDelegate.swift */,
@@ -107,6 +110,14 @@
 				2EDF2DE5260F2DE10090E8E4 /* ViewReactor.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2EDF2DEA260F41350090E8E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2EDF2DEB260F41440090E8E4 /* UIButton+Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		551A136ADA71EA2E1CDB45F8 /* Frameworks */ = {
@@ -240,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EDF2DBA260EF51D0090E8E4 /* ViewController.swift in Sources */,
+				2EDF2DEC260F41440090E8E4 /* UIButton+Extensions.swift in Sources */,
 				2EDF2DE6260F2DE10090E8E4 /* ViewReactor.swift in Sources */,
 				2EDF2DB6260EF51D0090E8E4 /* AppDelegate.swift in Sources */,
 				2EDF2DC0260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodeld in Sources */,
