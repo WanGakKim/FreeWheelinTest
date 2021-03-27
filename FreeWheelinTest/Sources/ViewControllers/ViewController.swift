@@ -5,11 +5,13 @@
 //  Created by Wangak Kim on 2021/03/27.
 //  Copyright © 2021 Wangak Kim. All rights reserved.
 //
-	
+
 
 import UIKit
 
 import RxSwift
+import RxCocoa
+
 import ReactorKit
 
 class ViewController: UIViewController, View {
