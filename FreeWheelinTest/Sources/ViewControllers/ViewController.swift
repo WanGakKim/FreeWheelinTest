@@ -9,6 +9,8 @@
 
 import UIKit
 
+import RxSwift
+
 class ViewController: UIViewController {
 
     // MARK: initializing
@@ -20,6 +22,10 @@ class ViewController: UIViewController {
     required convenience init?(coder: NSCoder) {
         self.init()
     }
+    
+    //MARK: Rx
+    
+    var disposeBag = DisposeBag()
     
     
     //MARK: View Life Cycles + Set up Constraints
