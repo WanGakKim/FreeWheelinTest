@@ -145,15 +145,15 @@ class ViewController: UIViewController, View {
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         (loadButtonItem.customView as! UIButton).rx.tap
-            .map{ Reactor.Action.save }
+            .map{ Reactor.Action.load }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         (penButtonItem.customView as! UIButton).rx.tap
-            .map{ Reactor.Action.save }
+            .map{ Reactor.Action.pen }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         (eraseButtonItem.customView as! UIButton).rx.tap
-            .map{ Reactor.Action.save }
+            .map{ Reactor.Action.erase }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
