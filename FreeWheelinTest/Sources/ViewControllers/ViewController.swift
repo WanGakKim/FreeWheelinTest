@@ -8,14 +8,13 @@
 
 
 import UIKit
+import Vision
 
 import RxSwift
 import RxCocoa
-
 import ReactorKit
-
-class ViewController: UIViewController, View {
-    
+import RxGesture
+class ViewController: UIViewController, ReactorKit.View {
     typealias Reactor = ViewReactor
     
     //MARK: Constants
@@ -27,7 +26,7 @@ class ViewController: UIViewController, View {
     
     struct Color {
         static let lineColor = UIColor.black
-        static let barButtonBackgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1)
+        static let backgroundColor = UIColor(red: 196/255, green: 196/255, blue: 196/255, alpha: 1)
     }
     
     struct Font {
@@ -43,7 +42,7 @@ class ViewController: UIViewController, View {
             width: Metric.barButtonSize,
             height: Metric.barButtonSize)
         button.setBackgroundColor(
-            Color.barButtonBackgroundColor,
+            Color.backgroundColor,
             for: .normal)
         button.layer.cornerRadius = Metric.barButtonRadius
         button.clipsToBounds = true
@@ -57,7 +56,7 @@ class ViewController: UIViewController, View {
             width: Metric.barButtonSize,
             height: Metric.barButtonSize)
         button.setBackgroundColor(
-            Color.barButtonBackgroundColor,
+            Color.backgroundColor,
             for: .normal)
         button.layer.cornerRadius = Metric.barButtonRadius
         button.clipsToBounds = true
@@ -71,7 +70,7 @@ class ViewController: UIViewController, View {
             width: Metric.barButtonSize,
             height: Metric.barButtonSize)
         button.setBackgroundColor(
-            Color.barButtonBackgroundColor,
+            Color.backgroundColor,
             for: .normal)
         button.layer.cornerRadius = Metric.barButtonRadius
         button.clipsToBounds = true
@@ -85,7 +84,7 @@ class ViewController: UIViewController, View {
             width: Metric.barButtonSize,
             height: Metric.barButtonSize)
         button.setBackgroundColor(
-            Color.barButtonBackgroundColor,
+            Color.backgroundColor,
             for: .normal)
         button.layer.cornerRadius = Metric.barButtonRadius
         button.clipsToBounds = true
@@ -94,7 +93,10 @@ class ViewController: UIViewController, View {
         $0.customView = button
         
     }
-    fileprivate let drawImageView = UIImageView()
+    fileprivate let drawImageView = UIImageView().then {
+        $0.backgroundColor = Color.backgroundColor
+        
+    }
     
     //MARK: Rx
     
@@ -114,7 +116,7 @@ class ViewController: UIViewController, View {
         fatalError("init(coder:) has not been implemented")
     }
     
-
+    
     //MARK: View Life Cycles + Set up Constraints
     
     private(set) var isSetConstraints = false
@@ -122,10 +124,12 @@ class ViewController: UIViewController, View {
     override func viewDidLoad() {
         self.view.setNeedsUpdateConstraints()
         super.viewDidLoad()
-
+        
+        view.addSubview(drawImageView)
     }
     
     override func updateViewConstraints() {
+        print("update")
         if self.isSetConstraints == false {
             setConstraints()
             isSetConstraints = true
@@ -134,18 +138,22 @@ class ViewController: UIViewController, View {
     }
     
     func setConstraints(){
-        
+        drawImageView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
     }
     
     //MARK: Binding
     
     func bind(reactor: ViewReactor) {
+        print("binding")
+        
         (saveButtonItem.customView as! UIButton).rx.tap
             .map{ Reactor.Action.save }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         (loadButtonItem.customView as! UIButton).rx.tap
-            .map{ Reactor.Action.load }
+            .map{ Reactor.Action.load(self.drawImageView) }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         (penButtonItem.customView as! UIButton).rx.tap
@@ -157,8 +165,13 @@ class ViewController: UIViewController, View {
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         
+        drawImageView.rx
+            .panGesture()
+            .share(replay: 1)
+            .asObservable()
+            .map { Reactor.Action.draw(self.drawImageView,$0)}
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
         
     }
-    
 }
-
