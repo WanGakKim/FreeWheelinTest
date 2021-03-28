@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1F1F73260FA4170082773C /* PaintService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1F1F72260FA4170082773C /* PaintService.swift */; };
+		2E3205B8261080CC00CFA1F0 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3205B7261080CC00CFA1F0 /* BaseService.swift */; };
+		2E3205BB2610812800CFA1F0 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3205BA2610812800CFA1F0 /* ServiceProvider.swift */; };
 		2EDF2DB6260EF51D0090E8E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DB5260EF51D0090E8E4 /* AppDelegate.swift */; };
 		2EDF2DB8260EF51D0090E8E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DB7260EF51D0090E8E4 /* SceneDelegate.swift */; };
 		2EDF2DBA260EF51D0090E8E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DB9260EF51D0090E8E4 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E1F1F72260FA4170082773C /* PaintService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintService.swift; sourceTree = "<group>"; };
+		2E3205B7261080CC00CFA1F0 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		2E3205BA2610812800CFA1F0 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		2EDF2DB2260EF51D0090E8E4 /* FreeWheelinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeWheelinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDF2DB5260EF51D0090E8E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDF2DB7260EF51D0090E8E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +54,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E1F1F71260FA4090082773C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2E3205B7261080CC00CFA1F0 /* BaseService.swift */,
+				2E3205BA2610812800CFA1F0 /* ServiceProvider.swift */,
+				2E1F1F72260FA4170082773C /* PaintService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		2EDF2DA9260EF51D0090E8E4 = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +112,12 @@
 		2EDF2DD0260EF5840090E8E4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2EDF2DB5260EF51D0090E8E4 /* AppDelegate.swift */,
+				2EDF2DB7260EF51D0090E8E4 /* SceneDelegate.swift */,
+				2E1F1F71260FA4090082773C /* Services */,
 				2EDF2DEE260F68420090E8E4 /* Models */,
 				2EDF2DEA260F41350090E8E4 /* Utils */,
 				2EDF2DD1260EF5940090E8E4 /* ViewControllers */,
-				2EDF2DB5260EF51D0090E8E4 /* AppDelegate.swift */,
-				2EDF2DB7260EF51D0090E8E4 /* SceneDelegate.swift */,
 				2EDF2DBE260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodeld */,
 			);
 			path = Sources;
@@ -263,11 +280,14 @@
 			files = (
 				2EDF2DBA260EF51D0090E8E4 /* ViewController.swift in Sources */,
 				2EDF2DF0260F685E0090E8E4 /* Paint.swift in Sources */,
+				2E1F1F73260FA4170082773C /* PaintService.swift in Sources */,
 				2EDF2DEC260F41440090E8E4 /* UIButton+Extensions.swift in Sources */,
 				2EDF2DE6260F2DE10090E8E4 /* ViewReactor.swift in Sources */,
 				2EDF2DB6260EF51D0090E8E4 /* AppDelegate.swift in Sources */,
+				2E3205BB2610812800CFA1F0 /* ServiceProvider.swift in Sources */,
 				2EDF2DC0260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodeld in Sources */,
 				2EDF2DB8260EF51D0090E8E4 /* SceneDelegate.swift in Sources */,
+				2E3205B8261080CC00CFA1F0 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

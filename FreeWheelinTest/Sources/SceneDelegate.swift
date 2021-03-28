@@ -28,8 +28,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
          let window = UIWindow(windowScene: windowScene)
             window.backgroundColor = .white
             window.makeKeyAndVisible()
-            
-            let viewReactor = ViewReactor()
+            let serviceProvider = ServiceProvider()
+            let viewReactor = ViewReactor(provider: serviceProvider)
             let viewController = ViewController(reactor: viewReactor)
             let navigationController = UINavigationController(rootViewController: viewController)
             window.rootViewController = navigationController
