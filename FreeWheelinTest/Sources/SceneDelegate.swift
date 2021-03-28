@@ -9,24 +9,31 @@
 
 import UIKit
 
+import CGFloatLiteral
+import CoreData
+import SnapKit
+import Then
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    func scene(
+        _ scene: UIScene,
+        willConnectTo session: UISceneSession,
+        options connectionOptions: UIScene.ConnectionOptions) {
 
         if let windowScene = scene as? UIWindowScene {
          let window = UIWindow(windowScene: windowScene)
             window.backgroundColor = .white
             window.makeKeyAndVisible()
-
-//            let serviceProvider = ServiceProvider()
-//            let reactor = HomeListViewReactor(provider: serviceProvider)
-//            let viewController = HomeListViewController(reactor: reactor)
-//            let navigationController = UINavigationController(rootViewController: viewController)
-//            window.rootViewController = navigationController
-
+            let serviceProvider = ServiceProvider()
+            let viewReactor = ViewReactor(provider: serviceProvider)
+            let viewController = ViewController(reactor: viewReactor)
+            let navigationController = UINavigationController(rootViewController: viewController)
+            window.rootViewController = navigationController
+            
             self.window = window
         }
     }

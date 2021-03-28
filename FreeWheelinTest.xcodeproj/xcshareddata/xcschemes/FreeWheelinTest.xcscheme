@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B97662FD0B684DBDE98573C1D829B1D7"
-               BuildableName = "Pods_FreeWheelinTest.framework"
-               BlueprintName = "Pods-FreeWheelinTest"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "2EDF2DB1260EF51D0090E8E4"
+               BuildableName = "FreeWheelinTest.app"
+               BlueprintName = "FreeWheelinTest"
+               ReferencedContainer = "container:FreeWheelinTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2EDF2DB1260EF51D0090E8E4"
+            BuildableName = "FreeWheelinTest.app"
+            BlueprintName = "FreeWheelinTest"
+            ReferencedContainer = "container:FreeWheelinTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,6 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2EDF2DB1260EF51D0090E8E4"
+            BuildableName = "FreeWheelinTest.app"
+            BlueprintName = "FreeWheelinTest"
+            ReferencedContainer = "container:FreeWheelinTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -14,6 +14,7 @@ target 'FreeWheelinTest' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Action'
+  pod 'RxGesture'
 
   # UI
   pod 'SnapKit'
