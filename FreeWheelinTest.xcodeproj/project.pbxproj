@@ -3,30 +3,40 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1F1F73260FA4170082773C /* PaintService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1F1F72260FA4170082773C /* PaintService.swift */; };
+		2E3205B8261080CC00CFA1F0 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3205B7261080CC00CFA1F0 /* BaseService.swift */; };
+		2E3205BB2610812800CFA1F0 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3205BA2610812800CFA1F0 /* ServiceProvider.swift */; };
 		2EDF2DB6260EF51D0090E8E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DB5260EF51D0090E8E4 /* AppDelegate.swift */; };
 		2EDF2DB8260EF51D0090E8E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DB7260EF51D0090E8E4 /* SceneDelegate.swift */; };
 		2EDF2DBA260EF51D0090E8E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DB9260EF51D0090E8E4 /* ViewController.swift */; };
-		2EDF2DBD260EF51D0090E8E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDF2DBB260EF51D0090E8E4 /* Main.storyboard */; };
 		2EDF2DC0260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DBE260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodeld */; };
 		2EDF2DC2260EF51F0090E8E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDF2DC1260EF51F0090E8E4 /* Assets.xcassets */; };
 		2EDF2DC5260EF51F0090E8E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDF2DC3260EF51F0090E8E4 /* LaunchScreen.storyboard */; };
+		2EDF2DE6260F2DE10090E8E4 /* ViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DE5260F2DE10090E8E4 /* ViewReactor.swift */; };
+		2EDF2DEC260F41440090E8E4 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DEB260F41440090E8E4 /* UIButton+Extensions.swift */; };
+		2EDF2DF0260F685E0090E8E4 /* Paint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF2DEF260F685E0090E8E4 /* Paint.swift */; };
 		E2D8EFFBFBD8E324203F8560 /* Pods_FreeWheelinTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B608A46FADF0F82D66780A /* Pods_FreeWheelinTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E1F1F72260FA4170082773C /* PaintService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintService.swift; sourceTree = "<group>"; };
+		2E3205B7261080CC00CFA1F0 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		2E3205BA2610812800CFA1F0 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		2EDF2DB2260EF51D0090E8E4 /* FreeWheelinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeWheelinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDF2DB5260EF51D0090E8E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDF2DB7260EF51D0090E8E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2EDF2DB9260EF51D0090E8E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2EDF2DBC260EF51D0090E8E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2EDF2DBF260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FreeWheelinTest.xcdatamodel; sourceTree = "<group>"; };
 		2EDF2DC1260EF51F0090E8E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDF2DC4260EF51F0090E8E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EDF2DC6260EF51F0090E8E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EDF2DE5260F2DE10090E8E4 /* ViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReactor.swift; sourceTree = "<group>"; };
+		2EDF2DEB260F41440090E8E4 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		2EDF2DEF260F685E0090E8E4 /* Paint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paint.swift; sourceTree = "<group>"; };
 		44FD608F7AB490AEB7C33809 /* Pods-FreeWheelinTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeWheelinTest.release.xcconfig"; path = "Target Support Files/Pods-FreeWheelinTest/Pods-FreeWheelinTest.release.xcconfig"; sourceTree = "<group>"; };
 		A122323AEDE468C4C62EC1F6 /* Pods-FreeWheelinTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeWheelinTest.debug.xcconfig"; path = "Target Support Files/Pods-FreeWheelinTest/Pods-FreeWheelinTest.debug.xcconfig"; sourceTree = "<group>"; };
 		D7B608A46FADF0F82D66780A /* Pods_FreeWheelinTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeWheelinTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E1F1F71260FA4090082773C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2E3205B7261080CC00CFA1F0 /* BaseService.swift */,
+				2E3205BA2610812800CFA1F0 /* ServiceProvider.swift */,
+				2E1F1F72260FA4170082773C /* PaintService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		2EDF2DA9260EF51D0090E8E4 = {
 			isa = PBXGroup;
 			children = (
@@ -68,7 +88,6 @@
 				2EDF2DD0260EF5840090E8E4 /* Sources */,
 				2EDF2DCF260EF5660090E8E4 /* Support */,
 				2EDF2DCD260EF54A0090E8E4 /* Resources */,
-				2EDF2DBB260EF51D0090E8E4 /* Main.storyboard */,
 			);
 			path = FreeWheelinTest;
 			sourceTree = "<group>";
@@ -93,9 +112,12 @@
 		2EDF2DD0260EF5840090E8E4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				2EDF2DD1260EF5940090E8E4 /* ViewControllers */,
 				2EDF2DB5260EF51D0090E8E4 /* AppDelegate.swift */,
 				2EDF2DB7260EF51D0090E8E4 /* SceneDelegate.swift */,
+				2E1F1F71260FA4090082773C /* Services */,
+				2EDF2DEE260F68420090E8E4 /* Models */,
+				2EDF2DEA260F41350090E8E4 /* Utils */,
+				2EDF2DD1260EF5940090E8E4 /* ViewControllers */,
 				2EDF2DBE260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodeld */,
 			);
 			path = Sources;
@@ -105,8 +127,25 @@
 			isa = PBXGroup;
 			children = (
 				2EDF2DB9260EF51D0090E8E4 /* ViewController.swift */,
+				2EDF2DE5260F2DE10090E8E4 /* ViewReactor.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2EDF2DEA260F41350090E8E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2EDF2DEB260F41440090E8E4 /* UIButton+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2EDF2DEE260F68420090E8E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EDF2DEF260F685E0090E8E4 /* Paint.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		551A136ADA71EA2E1CDB45F8 /* Frameworks */ = {
@@ -123,7 +162,6 @@
 				A122323AEDE468C4C62EC1F6 /* Pods-FreeWheelinTest.debug.xcconfig */,
 				44FD608F7AB490AEB7C33809 /* Pods-FreeWheelinTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -188,7 +226,6 @@
 			files = (
 				2EDF2DC5260EF51F0090E8E4 /* LaunchScreen.storyboard in Resources */,
 				2EDF2DC2260EF51F0090E8E4 /* Assets.xcassets in Resources */,
-				2EDF2DBD260EF51D0090E8E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,23 +279,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EDF2DBA260EF51D0090E8E4 /* ViewController.swift in Sources */,
+				2EDF2DF0260F685E0090E8E4 /* Paint.swift in Sources */,
+				2E1F1F73260FA4170082773C /* PaintService.swift in Sources */,
+				2EDF2DEC260F41440090E8E4 /* UIButton+Extensions.swift in Sources */,
+				2EDF2DE6260F2DE10090E8E4 /* ViewReactor.swift in Sources */,
 				2EDF2DB6260EF51D0090E8E4 /* AppDelegate.swift in Sources */,
+				2E3205BB2610812800CFA1F0 /* ServiceProvider.swift in Sources */,
 				2EDF2DC0260EF51D0090E8E4 /* FreeWheelinTest.xcdatamodeld in Sources */,
 				2EDF2DB8260EF51D0090E8E4 /* SceneDelegate.swift in Sources */,
+				2E3205B8261080CC00CFA1F0 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2EDF2DBB260EF51D0090E8E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2EDF2DBC260EF51D0090E8E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2EDF2DC3260EF51F0090E8E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
